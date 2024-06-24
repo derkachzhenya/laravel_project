@@ -1,13 +1,25 @@
 <template>
-  <h1 class="text-3xl font-bold underline">Все получилось, как дела...!</h1>
-  <h1 class="text-3xl font-bold underline">
-    Я красавчик
-  </h1>
+  <div>
+    <h1 class="text-3xl font-bold underline">Текущее время: {{ currentTime }}</h1>
+    <h2 class="text-2xl">Прошло секунд: {{ elapsedSeconds }}</h2>
+  </div>
 </template>
-  
-  <script>
+
+<script>
 export default {
-  name: "App",
+  name: "RealTimeUpdate",
+  data() {
+    return {
+      currentTime: new Date().toLocaleTimeString(),
+      elapsedSeconds: 0,
+    };
+  },
+  mounted() {
+    // Обновляем время каждую секунду
+    setInterval(() => {
+      this.currentTime = new Date().toLocaleTimeString();
+      this.elapsedSeconds++;
+    }, 1000);
+  },
 };
 </script>
-  
