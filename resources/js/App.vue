@@ -80,7 +80,7 @@
 </template>
 
 <script setup>
-import { Head } from "@inertiajs/vue3";
+
 import { ref } from "vue";
 
 const menuOpen = ref(false);
