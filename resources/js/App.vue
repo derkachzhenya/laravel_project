@@ -240,14 +240,16 @@
     </div>
     <!--EndBackground-->
 
+  
 
-    <!--Map-->
-<map class="w-3/4 mx-auto bg-white dark:bg-gray-900">
+
+ <!--Map-->
+<section class="w-3/4 mx-auto bg-white dark:bg-gray-900">
     <h2
         class="mb-4 mt-8 lg:mt-3 text-4xl font-extrabold leading-none tracking-tight text-gray-900 text-center sm:text-lg lg:text-4xl dark:text-white">
         Countries Grouped by Continent: Africa, Asia, Europe, America</h2>
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 sm:py-0 lg:py-8">
-        <div class="lg:flex ">
+        <div class="lg:flex">
             <div class="md:mb-6 md:mr-8">
                 <img class="h-28 w-28 sm:h-24 sm:w-24 lg:h-56 lg:w-56  mx-auto" :src="'/earth.png'"
                     alt="image description">
@@ -359,8 +361,9 @@
             </div>
         </div>
     </div>
-</map>
+</section>
 <!--EndMap-->
+
 
 
  <!--Footer-->
